@@ -16,9 +16,9 @@ PATH_LIB = PATH_FILE
 os.environ['PATH'] = PATH_LIB + ";" + os.environ['PATH']
 sys.path.insert(0, PATH_LIB)
 
-import OlxAPI
-from OlxAPIConst import *
-import OlxAPILib
+from . import OlxAPI
+from . import OlxAPIConst
+from . import OlxAPILib
 
 #
 # Command Line INPUTS

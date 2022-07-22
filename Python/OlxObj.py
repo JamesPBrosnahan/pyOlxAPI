@@ -9,9 +9,9 @@ __status__    = "Release candidate"
 __version__   = "2.2.1"
 #
 import os
-import OlxAPI
-import OlxAPILib
-import OlxAPIConst
+from . import OlxAPI
+from . import OlxAPILib
+from . import OlxAPIConst
 from ctypes import c_int, byref,c_double,cast,POINTER,c_char_p,create_string_buffer,pointer
 
 #

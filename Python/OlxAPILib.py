@@ -11,10 +11,10 @@ __status__    = "Release"
 __version__   = "1.3.5"
 #
 import sys,os
-import OlxAPI
-from OlxAPIConst import *
+from . import OlxAPI
+from .OlxAPIConst import *
 from ctypes import *
-import AppUtils
+from . import AppUtils
 
 #
 dictCode_BR_sID   = {TC_LINE:LN_sID  , TC_SWITCH:SW_sID  , TC_PS: PS_sID  , TC_XFMR:XR_sID  , TC_XFMR3:X3_sID  , TC_SCAP:SC_sID   }

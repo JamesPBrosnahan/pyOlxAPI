@@ -10,7 +10,7 @@ __status__ = "Release"
 
 from ctypes import *
 import sys,os.path
-from OlxAPIConst import *
+from .OlxAPIConst import *
 
 class OlxAPIException(Exception):
     """Raise this exeption to report OlxAPI error messages

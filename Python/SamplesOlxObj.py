@@ -35,7 +35,7 @@ PARSER_INPUTS.add_argument('-olxpathpy' , help = ' (str) Full pathname of the fo
 #
 ARGVS = PARSER_INPUTS.parse_known_args()[0]
 sys.path.insert(0,ARGVS.olxpathpy)
-import OlxObj
+from . import OlxObj
 OlxObj.load_olxapi(ARGVS.olxpath)           # OlxAPI module initialization
 ## End OlxObj initialization
 ###############################################################################
